@@ -87,7 +87,7 @@ projectsRouter.put('/:id', (req,res) => {
 projectsRouter.post('/:id/actions', validatePost, (req,res) => {
     req.body.project_id = req.project
     if (!req.body.notes || !req.body.description) {
-        res.status(400).json({error: "Add descriptoion and notes"})
+        res.status(400).json({error: "Add description and notes"})
     } else { 
         actionsMethods.insert(req.body)
         .then(data => {
