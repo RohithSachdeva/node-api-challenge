@@ -38,15 +38,25 @@ Commit your code regularly and use descriptive messages. This helps both you (in
 
 Demonstrate your understanding of this Sprint's concepts by answering the following free-form questions. Edit this document to include your answers after each question. Make sure to leave a blank line above and below your answer so it is clear and easy to read by your Team Lead.
 
--   [ ] Mention two parts of Express that you learned about this week.
+-   [1] Mention two parts of Express that you learned about this week.
 
--   [ ] Describe Middleware?
+    1a.  Express as a whole framework that layers upon the Node.js server module and allows us to add extra functionality to our code.  Express router which allows us to partition our CRUD requests. 
 
--   [ ] Describe a Resource?
+-   [2] Describe Middleware?
 
--   [ ] What can the API return to help clients know if a request was successful?
+    2a. Middleware are functions that can be created to change certain request/response objects.  They are an easy way to add modularity and extra functionality to our code.
 
--   [ ] How can we partition our application into sub-applications?
+-   [3] Describe a Resource?
+
+    3a. A resource is a source of data that is usually categorized.  We have been using CRUD operations to create an API that will allows us to store and edit/update/delete our resources.  We could have a Lambda school API where cohorts and students would be resources available as accessible data. 
+
+-   [4] What can the API return to help clients know if a request was successful?
+
+    4a.  You can return status codes to the client that are universally recognized.  This includes using a status code of 200 which is typical of a successful request.  A code of 400 is common for an unsuccessful one.
+
+-   [5] How can we partition our application into sub-applications?
+
+    5a.  We can partition our application by Routing via Express.  This allows us to break up our application into sections that can be routed into a main folder/application.  This allows for better organization and a smaller index/server file. 
 
 ## Minimum Viable Product
 
